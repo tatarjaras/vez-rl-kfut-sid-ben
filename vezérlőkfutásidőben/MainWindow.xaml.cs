@@ -32,7 +32,7 @@ namespace vezérlőkfutásidőben
             {
                 if (i%int.Parse(tbxHanyadik.Text)==0)
                 {
-                    (grElements.Children[i] as Button).Background=
+                    (grElements.Children[i] as Button).Background = Brushes.Black;
                 }
             }
         }
