@@ -36,5 +36,17 @@ namespace vezérlőkfutásidőben
                 }
             }
         }
+        private void map_Click(object sender, RoutedEventArgs e)
+        {
+            int sor = 3;
+            int oszlop = 3;
+            for (int i = 0; i < sor; i++)
+            {
+                for (int j = 0; j < oszlop; j++)
+                {
+                    map.Children.Add
+                }
+            }
+        }
     }
 }

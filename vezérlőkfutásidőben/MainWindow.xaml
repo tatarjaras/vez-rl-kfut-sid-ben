@@ -9,13 +9,16 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="108*"/>
         </Grid.ColumnDefinitions>
         <StackPanel>
-        <Button Content="start" Click="Add_Click"/>
-        <TextBox x:Name="tbxHanyadik" Text="1"/>
+            <Button Content="start" Click="Add_Click"/>
+            <TextBox x:Name="tbxHanyadik" Text="1"/>
             <Button x:Name="paint" Content="paint" Click="paint_Click"/>
+            <Button x:Name="bmap" Content="map" Click="map_Click"/>
         </StackPanel>
-        <StackPanel Grid.Column="1" Name="grElements"></StackPanel>
+        <StackPanel Grid.Column="1" Name="grElements" Grid.ColumnSpan="1"></StackPanel>
+        <StackPanel Grid.Column="1" Name="map"  Grid.ColumnSpan="2"></StackPanel>
     </Grid>
 </Window>
